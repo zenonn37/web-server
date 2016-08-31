@@ -15,7 +15,7 @@ var  middleware = {
 }
 app.use(middleware.logger);
  app.get('/about',middleware.requireAuth,function(req,res) {
-    res.send('About us');
+    res.send('About me!');
  })
 app.use(express.static(__dirname + '/public'));
  var port = process.env.PORT || 4000;
