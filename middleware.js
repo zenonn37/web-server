@@ -5,7 +5,7 @@ module.exports  = {
               next();
           },
           logger:function(req,res,next) {
-            let log = new Date().toString();
+            var log = new Date().toString();
             console.log(`Request: ${req.method} ${req.originalUrl} created ${log}`);
             next();
           }
